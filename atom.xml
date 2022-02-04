@@ -6,7 +6,7 @@
   <link href="https://blog.edward.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.edward.moe/"/>
-  <updated>2022-02-04T14:16:35.670Z</updated>
+  <updated>2022-02-04T23:42:31.375Z</updated>
   <id>https://blog.edward.moe/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello Sekai</title>
+    <link href="https://blog.edward.moe/2022/02/05/Hello-Sekai/"/>
+    <id>https://blog.edward.moe/2022/02/05/Hello-Sekai/</id>
+    <published>2022-02-04T23:39:36.000Z</published>
+    <updated>2022-02-04T23:42:31.375Z</updated>
+    
+    <content type="html"><![CDATA[</br>## 테스트</br><span id="more"></span></br>Oh, the weather outside is frightful</br>But the fire is so delightful</br>And since we've no place to go</br></br>### Let it snow, let it snow, let it snow</br>it doesn't show signs of stopping</br></br></br>]]></content>
+    
+    
+    <summary type="html">&lt;/br&gt;
+## 테스트
+&lt;/br&gt;</summary>
+    
+    
+    
+    <category term="일기" scheme="https://blog.edward.moe/categories/%EC%9D%BC%EA%B8%B0/"/>
+    
+    
+    <category term="Diary" scheme="https://blog.edward.moe/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>2021년을 돌아보며, 상경 1년차 새내기의 회고</title>
