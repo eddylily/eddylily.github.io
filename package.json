@@ -35,6 +35,6 @@
     "hexo-theme-next": "^8.8.2",
     "inferno": "^7.4.11",
     "inferno-create-element": "^7.4.11",
-    "npm": "^8.3.0"
+    "npm": "^8.17.0"
   }
 }
