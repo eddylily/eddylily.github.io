@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>퇴마묵시록 관련 공지</title>
+      <link href="/2022/09/26/apocalypsis-exorcismus/"/>
+      <url>/2022/09/26/apocalypsis-exorcismus/</url>
+      
+        <content type="html"><![CDATA[<br><p><img src="/postimgs/apoexo_dev.png" alt="현재 개발 중"></p><br><p>오래 기다리셨습니다.</p><br><br>]]></content>
+      
+      
+      <categories>
+          
+          <category> 퇴마묵시록 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GameMaker™ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CV 페이지를 만들어보았다 [1부]</title>
+      <link href="/2022/09/21/cv-page-writing-1/"/>
+      <url>/2022/09/21/cv-page-writing-1/</url>
+      
+        <content type="html"><![CDATA[<p>오래 전부터 필자는 자신만의 CV 페이지를 갖고 싶어했다. 정작 남들 앞에 내세울 경력도 실력도 없는 필자이지만, 아무튼 개발자를 지망하는 이들이라면 누구나 그러한 생각을 해 보았을 것이다. 미려한 디자인의 CV부터 밋밋하지만 실속 있는 CV까지, 이미 많은 개발자들이 자신만의 개성이 담긴 CV 페이지를 가지고 있다. </p><p>무릇 개발자라면 CV 페이지 쯤은 직접 만들어야 마땅한 것이다. 한 줌도 채 안 되는 html 지식을 가진 필자는 이번 기회에 html/css에 더욱 친숙해지기 위해 바닥부터 직접 시작해보기로 했다. 레이아웃의 기본 틀은 <a href="https://seill.tistory.com/75">여기</a>에서 도움을 받았다. </p><span id="more"></span><br><hr><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>우선 코드 작성에 앞서 CV 페이지의 UI 디자인을 간단히 해 보기로 했다.</p><br><p><img src="/postimgs/cv_design.png" alt="CV 페이지 디자인 초안"></p><br><p>깔끔하면서도 너무 밋밋하지 않은 디자인을 원했다. 주요 색상은 <a href="https://www.materialpalette.com/colors">Material Design Palette</a>의 Pink 색상을 사용하였다.</p><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">header &#123;height: 96px;&#125;  /* 상단 여백 */</span><br><span class="line"></span><br><span class="line">article &#123;</span><br><span class="line">  position: absolute; left: 50%;</span><br><span class="line">  width: 480px; height: 256px;</span><br><span class="line">  padding-left: 16px; padding-right: 16px;</span><br><span class="line">  padding-top: 32px; padding-bottom: 16px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">wpink &#123;</span><br><span class="line">  position: absolute; right: 50%; transform: translateX(-32px);</span><br><span class="line">  width: 352px; height: 256px;</span><br><span class="line">  background: #F48FB1;</span><br><span class="line">  padding-left: 32px; padding-right: 16px;</span><br><span class="line">  padding-top: 24px; padding-bottom: 16px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><br><p>absolute relative static 설명</p><p><a href="https://velog.io/@rimu/css-%EC%9A%94%EC%86%8C%EC%9D%98-%EC%9C%84%EC%B9%98position-%EC%A0%95%EB%A6%AC">https://velog.io/@rimu/css-요소의-위치position-정리</a></p><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">@font-face&#123;</span><br><span class="line">    font-family: &#x27;KintexL&#x27;; /* 고양일산체 L */</span><br><span class="line">    src: url(&#x27;./fonts/KintexL/GoyangIlsan_L.woff2&#x27;) format(‘woff2’), </span><br><span class="line">         url(&#x27;./fonts/KintexL/GoyangIlsan_L.ttf&#x27;) format(&#x27;truetype&#x27;),</span><br><span class="line">         url(&#x27;./fonts/KintexL/GoyangIlsan_L.woff&#x27;) format(‘woff’),</span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsan_L.eot?#iefix&#x27;) format(&#x27;embedded-opentype&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">@font-face&#123;</span><br><span class="line">    font-family: &#x27;KintexR&#x27;; /* 고양일산체 R */</span><br><span class="line">    src: url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.woff2&#x27;) format(‘woff2’),</span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.ttf&#x27;) format(&#x27;truetype&#x27;),</span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.woff&#x27;) format(‘woff’), </span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.eot?#iefix&#x27;) format(&#x27;embedded-opentype&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">  font-family: &#x27;KintexL&#x27;, &#x27;KintexR&#x27;, Arial, Helvetica, sans-serif;  /* 고양일산체 적용 */</span><br><span class="line">  background-color: #FCE4EC;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><br><p>woff 설명</p><p>Chrome에서 적용 안 되는 문제</p><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">btn_github &#123;</span><br><span class="line">  position: absolute; top: 388px; right: 50%;</span><br><span class="line">  transform: translateX(-288px);</span><br><span class="line">  width: 96px; height: 96px;</span><br><span class="line">  background: #e91e63;</span><br><span class="line">  padding: 16px;</span><br><span class="line">  display: block;</span><br><span class="line">&#125; /* 버튼 영역 */</span><br><span class="line"></span><br><span class="line">btn_github &gt; img &#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  width: 100%;</span><br><span class="line">  top: 50%; left: 50%;</span><br><span class="line">  transform: translate(-50%, -50%);</span><br><span class="line">&#125; /* 버튼 내 아이콘 이미지 */</span><br><span class="line"></span><br><span class="line">btn_github &gt; span &#123;</span><br><span class="line">  position: absolute; top: 120%; left: 50%;</span><br><span class="line">  width: 96px; height: 24px;</span><br><span class="line">  transform: translate(-50%, -50%);</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125; /* 버튼 아래 글씨 */</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p>translate 설명</p><p>2부에서 계속</p><br><br><br>]]></content>
+      
+      
+      <categories>
+          
+          <category> 웹개발 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html, css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>초등학생 때 만든 게임들을 리마스터해 보았다</title>
       <link href="/2022/09/19/gamemaker-works-remaster-1/"/>
       <url>/2022/09/19/gamemaker-works-remaster-1/</url>
