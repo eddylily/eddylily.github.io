@@ -6,7 +6,7 @@
   <link href="https://blog.edward.moe/atom.xml" rel="self"/>
   
   <link href="https://blog.edward.moe/"/>
-  <updated>2022-10-09T03:14:42.306Z</updated>
+  <updated>2022-10-09T05:27:48.455Z</updated>
   <id>https://blog.edward.moe/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>퇴마묵시록 개발 현황 (매일 업데이트)</title>
-    <link href="https://blog.edward.moe/2022/10/09/apocalypsis-exocismus-develop-process/"/>
-    <id>https://blog.edward.moe/2022/10/09/apocalypsis-exocismus-develop-process/</id>
+    <link href="https://blog.edward.moe/2022/10/09/apocalypsis-exorcismus-develop-process/"/>
+    <id>https://blog.edward.moe/2022/10/09/apocalypsis-exorcismus-develop-process/</id>
     <published>2022-10-09T03:06:42.000Z</published>
-    <updated>2022-10-09T03:14:42.306Z</updated>
+    <updated>2022-10-09T05:27:48.455Z</updated>
     
     <content type="html"><![CDATA[<br><p>(※ 아래 링크는 아직 완성되지 않은 게임의 개발 과정을 담고 있습니다.<br><br>스포일러를 원치 않으시는 분들은 주의해주세요!)</p><br><p><a href="https://pjexodus.notion.site/Nightly-Report-91675d64e74d41a19a28fed5cef4886b">여기</a>에 그날그날의 개발 진척 상황을 수시로 기록하고 있습니다.</p><br>]]></content>
     
@@ -41,14 +41,14 @@
     <category term="퇴마묵시록" scheme="https://blog.edward.moe/categories/%ED%87%B4%EB%A7%88%EB%AC%B5%EC%8B%9C%EB%A1%9D/"/>
     
     
-    <category term="GameMaker™️" scheme="https://blog.edward.moe/tags/GameMaker%E2%84%A2%EF%B8%8F/"/>
+    <category term="GameMaker™" scheme="https://blog.edward.moe/tags/GameMaker%E2%84%A2/"/>
     
   </entry>
   
   <entry>
     <title>퇴마묵시록 관련 공지</title>
-    <link href="https://blog.edward.moe/2022/09/26/apocalypsis-exocismus/"/>
-    <id>https://blog.edward.moe/2022/09/26/apocalypsis-exocismus/</id>
+    <link href="https://blog.edward.moe/2022/09/26/apocalypsis-exorcismus/"/>
+    <id>https://blog.edward.moe/2022/09/26/apocalypsis-exorcismus/</id>
     <published>2022-09-25T15:00:00.000Z</published>
     <updated>2022-09-25T13:32:29.003Z</updated>
     
