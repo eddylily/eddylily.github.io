@@ -40,7 +40,7 @@
     <link href="https://blog.edward.moe/2022/09/26/apocalypsis-exorcismus/"/>
     <id>https://blog.edward.moe/2022/09/26/apocalypsis-exorcismus/</id>
     <published>2022-09-25T15:00:00.000Z</published>
-    <updated>2022-10-13T16:03:30.771Z</updated>
+    <updated>2022-09-25T15:00:00.000Z</updated>
     
     <content type="html"><![CDATA[<br><p><img src="/postimgs/apoexo_dev.png" alt="퇴마묵시록 - 돌아온 퇴마사, 현재 개발 중"></p><br><p><strong>퇴마묵시록</strong>(退魔黙示録, Apocalypsis Exorcismus)은 Edward* 개인이 개발하는 2차 창작 게임이다. 서비스 종료된 교육용 MMORPG <a href="https://ko.wikipedia.org/wiki/%ED%95%9C%EC%9E%90%EB%A7%88%EB%A3%A8">한자마루</a>와 세계관을 공유하는 비영리 동인 오프라인 RPG로서 개발 중이다. Windows와 macOS를 지원할 예정이며, 2023년 하반기 공개를 목표로 하고 있다.</p><span id="more"></span><br><br><h1 id="메인-스토리"><a href="#메인-스토리" class="headerlink" title="메인 스토리"></a>메인 스토리</h1><br><h2 id="🔓-깨어진-봉인"><a href="#🔓-깨어진-봉인" class="headerlink" title="🔓 깨어진 봉인"></a>🔓 <strong>깨어진 봉인</strong></h2><p> 신마소제가 마지막으로 그 모습을 감춘 지 사백오십 년이 되는 해, 퇴마사를 양성하는 마법학교를 다니던 예비퇴마사 <strong>정안</strong>이 마법서고에서 정체를 알 수 없는 힘을 발하는 고대 마법석 조각을 발견한 뒤 그 힘에 빠져들어 그만 어둠의 힘에 굴복해버렸습니다.</p><p> 마법석 조각 속에 갇혀 있던 신마소제의 영혼에게 몸과 마음을 빼앗겨버린 정안은 학교를 떠나 오십 년 동안 세상을 떠돌아 다니다가 결국 대륙의 서쪽 끝에서 오백 년 전 퇴마사들이 만들어 두었던 결계의 봉인을 찾아냈습니다. 그리고 봉인을 깨트리고 그 속에 감춰져 있던 어둠의 땅 <strong>그림자땅</strong>으로 가는 길을 다시 열었습니다. 그리고 신마소제가 정안의 몸과 마음을 빌어서 부활해 다시 세상에 나타났습니다.</p><p> 신마소제와 퇴마사단의 기나긴 싸움은 오백 년 만에 다시 시작되었습니다.</p><br><h2 id="🗡-궁지에-몰린-퇴마사단"><a href="#🗡-궁지에-몰린-퇴마사단" class="headerlink" title="🗡 궁지에 몰린 퇴마사단"></a>🗡 <strong>궁지에 몰린 퇴마사단</strong></h2><p> 결계의 봉인이 풀리고 신마소제가 부활함에 따라 마족과 마물들이 깨어나 세상은 온통 혼란에 빠져들었습니다. 신마소제에 맞서기 위해 전 세계에서 많은 퇴마사들이 모였지만, 소제와 신마군단의 힘은 너무나 강력했고 퇴마사단은 진퇴양난의 위기에 내몰렸습니다. 마을 곳곳이 마물들에게 <strong>습격</strong>당해 폐허로 변해버렸고, 소수의 퇴마사들만이 퇴마사단 해저기지를 거점으로 하여 명맥을 이어가게 되었습니다.</p><p>그로부터 약 십여 년이 흘러 국제 마법학교를 관장하던 교장 <strong>마루한</strong>이 타계했습니다. 그의 장례식이 엄수되던 도중 자신을 정안의 사자라 칭하는 이가 나타나 정안의 <strong>계시</strong>를 전했고, 소수정예의 퇴마사들이 그 말에 따라 그림자땅으로의 모험을 떠나기로 했습니다. </p><p> 퇴마사들의 여정은 아직 끝나지 않았습니다.</p><br><br><p>(※ 아래 링크는 아직 완성되지 않은 게임의 개발 과정을 담고 있습니다.<br><strong>스포일러</strong>를 원치 않으시는 분들은 주의해주세요!)</p><p><a href="https://pjexodus.notion.site/992c999e33d143348c7b47d298d2392b"><strong>game.edward.moe</strong></a>에 그날그날의 개발 진척 상황을 수시로 기록하고 있습니다.</p><br><br>]]></content>
     
@@ -54,7 +54,9 @@
     
     
     
-    <category term="퇴마묵시록" scheme="https://blog.edward.moe/categories/%ED%87%B4%EB%A7%88%EB%AC%B5%EC%8B%9C%EB%A1%9D/"/>
+    <category term="게임메이커" scheme="https://blog.edward.moe/categories/%EA%B2%8C%EC%9E%84%EB%A9%94%EC%9D%B4%EC%BB%A4/"/>
+    
+    <category term="퇴마묵시록" scheme="https://blog.edward.moe/categories/%EA%B2%8C%EC%9E%84%EB%A9%94%EC%9D%B4%EC%BB%A4/%ED%87%B4%EB%A7%88%EB%AC%B5%EC%8B%9C%EB%A1%9D/"/>
     
     
     <category term="GameMaker™" scheme="https://blog.edward.moe/tags/GameMaker%E2%84%A2/"/>
@@ -66,7 +68,7 @@
     <link href="https://blog.edward.moe/2022/09/21/cv-page-writing-1/"/>
     <id>https://blog.edward.moe/2022/09/21/cv-page-writing-1/</id>
     <published>2022-09-21T12:46:04.000Z</published>
-    <updated>2022-09-26T00:02:46.529Z</updated>
+    <updated>2022-09-21T12:46:04.000Z</updated>
     
     <content type="html"><![CDATA[<p>오래 전부터 필자는 자신만의 CV 페이지를 갖고 싶어했다. 정작 남들 앞에 내세울 경력도 실력도 없는 필자이지만, 아무튼 개발자를 지망하는 이들이라면 누구나 그러한 생각을 해 보았을 것이다. 미려한 디자인의 CV부터 밋밋하지만 실속 있는 CV까지, 이미 많은 개발자들이 자신만의 개성이 담긴 CV 페이지를 가지고 있다. </p><p>무릇 개발자라면 CV 페이지 쯤은 직접 만들어야 마땅한 것이다. 한 줌도 채 안 되는 html 지식을 가진 필자는 이번 기회에 html/css에 더욱 친숙해지기 위해 바닥부터 직접 시작해보기로 했다. 레이아웃의 기본 틀은 <a href="https://seill.tistory.com/75">여기</a>에서 도움을 받았다. </p><span id="more"></span><br><hr><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>우선 코드 작성에 앞서 CV 페이지의 UI 디자인을 간단히 해 보기로 했다.</p><br><p><img src="/postimgs/cv_design.png" alt="CV 페이지 디자인 초안"></p><br><p>깔끔하면서도 너무 밋밋하지 않은 디자인을 원했다. 주요 색상은 <a href="https://www.materialpalette.com/colors">Material Design Palette</a>의 Pink 색상을 사용하였다.</p><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">header &#123;height: 96px;&#125;  /* 상단 여백 */</span><br><span class="line"></span><br><span class="line">article &#123;</span><br><span class="line">  position: absolute; left: 50%;</span><br><span class="line">  width: 480px; height: 256px;</span><br><span class="line">  padding-left: 16px; padding-right: 16px;</span><br><span class="line">  padding-top: 32px; padding-bottom: 16px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">wpink &#123;</span><br><span class="line">  position: absolute; right: 50%; transform: translateX(-32px);</span><br><span class="line">  width: 352px; height: 256px;</span><br><span class="line">  background: #F48FB1;</span><br><span class="line">  padding-left: 32px; padding-right: 16px;</span><br><span class="line">  padding-top: 24px; padding-bottom: 16px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><br><p>absolute relative static 설명</p><p><a href="https://velog.io/@rimu/css-%EC%9A%94%EC%86%8C%EC%9D%98-%EC%9C%84%EC%B9%98position-%EC%A0%95%EB%A6%AC">https://velog.io/@rimu/css-요소의-위치position-정리</a></p><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">@font-face&#123;</span><br><span class="line">    font-family: &#x27;KintexL&#x27;; /* 고양일산체 L */</span><br><span class="line">    src: url(&#x27;./fonts/KintexL/GoyangIlsan_L.woff2&#x27;) format(‘woff2’), </span><br><span class="line">         url(&#x27;./fonts/KintexL/GoyangIlsan_L.ttf&#x27;) format(&#x27;truetype&#x27;),</span><br><span class="line">         url(&#x27;./fonts/KintexL/GoyangIlsan_L.woff&#x27;) format(‘woff’),</span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsan_L.eot?#iefix&#x27;) format(&#x27;embedded-opentype&#x27;);</span><br><span class="line">&#125;</span><br><span class="line">@font-face&#123;</span><br><span class="line">    font-family: &#x27;KintexR&#x27;; /* 고양일산체 R */</span><br><span class="line">    src: url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.woff2&#x27;) format(‘woff2’),</span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.ttf&#x27;) format(&#x27;truetype&#x27;),</span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.woff&#x27;) format(‘woff’), </span><br><span class="line">         url(&#x27;./fonts/KintexR/GoyangIlsanR-Regular.eot?#iefix&#x27;) format(&#x27;embedded-opentype&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">  font-family: &#x27;KintexL&#x27;, &#x27;KintexR&#x27;, Arial, Helvetica, sans-serif;  /* 고양일산체 적용 */</span><br><span class="line">  background-color: #FCE4EC;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><br><p>WOFF(World Open Font Format)란 웹 상에서 가장 보편적으로 사용되는 폰트 포맷이다. Chrome이나 Safari 등 주요 브라우저에서 지원하며, 사실상의 표준으로 자리잡았다. 자세한 내용은 <a href="https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%98%A4%ED%94%88_%ED%8F%B0%ED%8A%B8_%ED%98%95%EC%8B%9D">위키백과</a>나 다른 블로그에서 찾을 수 있다.</p><p>고양일산체는 웹과 모바일을 포함한 다양한 매체에 자유롭게 사용이 가능한 폰트이다. 필자가 개인적으로 좋아하는 폰트라서 이번 CV 페이지 작업에 사용하기로 하였다. 고양일산체는 공식적으로는 WOFF 파일을 제공하지 않기 때문에 파일 변환 과정을 거쳐 사용하게 되었다. 그런데 문제가 하나 있었다. 어째서인지 Chrome 브라우저에서는 변경한 폰트가 적용되지 않는 것이었다. 반면 Safari 브라우저에서는 변경한 폰트가 정상적으로 적용되었다. 아직 그 이유를 찾아내지는 못 했으나 만약 해결하게 된다면 새로운 포스트에 해결 방법을 적어두도록 하겠다.</p><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line"></span><br><span class="line">btn_github &#123;</span><br><span class="line">  position: absolute; top: 388px; right: 50%;</span><br><span class="line">  transform: translateX(-288px);</span><br><span class="line">  width: 96px; height: 96px;</span><br><span class="line">  background: #e91e63;</span><br><span class="line">  padding: 16px;</span><br><span class="line">  display: block;</span><br><span class="line">&#125; /* 버튼 영역 */</span><br><span class="line"></span><br><span class="line">btn_github &gt; img &#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  width: 100%;</span><br><span class="line">  top: 50%; left: 50%;</span><br><span class="line">  transform: translate(-50%, -50%);</span><br><span class="line">&#125; /* 버튼 내 아이콘 이미지 */</span><br><span class="line"></span><br><span class="line">btn_github &gt; span &#123;</span><br><span class="line">  position: absolute; top: 120%; left: 50%;</span><br><span class="line">  width: 96px; height: 24px;</span><br><span class="line">  transform: translate(-50%, -50%);</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125; /* 버튼 아래 글씨 */</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><p>translate 설명</p><p>2부에서 계속</p><br><br><br>]]></content>
     
@@ -76,7 +78,9 @@
     
     
     
-    <category term="웹개발" scheme="https://blog.edward.moe/categories/%EC%9B%B9%EA%B0%9C%EB%B0%9C/"/>
+    <category term="웹" scheme="https://blog.edward.moe/categories/%EC%9B%B9/"/>
+    
+    <category term="CV" scheme="https://blog.edward.moe/categories/%EC%9B%B9/CV/"/>
     
     
     <category term="html, css" scheme="https://blog.edward.moe/tags/html-css/"/>
@@ -88,7 +92,7 @@
     <link href="https://blog.edward.moe/2022/09/19/gamemaker-works-remaster-1/"/>
     <id>https://blog.edward.moe/2022/09/19/gamemaker-works-remaster-1/</id>
     <published>2022-09-19T06:09:10.000Z</published>
-    <updated>2022-09-19T07:58:49.228Z</updated>
+    <updated>2022-09-19T06:09:10.000Z</updated>
     
     <content type="html"><![CDATA[<p>초등학생 때 필자는 친구와 함께 <span style="color: #689f38"><strong>GameMaker™ 8.0</strong></span>을 이용해 허접한 자작 게임을 만들곤 하였다. 개발 관련 지식은 당연히 전무했지만, 블록코딩 위주로 이루어진 툴이었기에 입문용으로는 제격이었다. 그렇게 서로 자신이 만든 게임을 공유하며 놀려고 <u><a href="https://cafe.naver.com/sangbinkids"><span style="color: #03a9f4"><strong>초딩들의 컴퓨터 도전기</strong></span></a></u>라는 카페를 만들었다. 한때 회원수 600명을 웃돌 정도로 성장했지만, 우리가 중학생이 된 이후로는 점차 관리가 소홀해졌다. <span style="color: #9e9e9e"><del>(이름값 하는 카페…?)</del></span></p><span id="more"></span></br><p>아무튼 당시에는 정말로 순수한 흥미와 열정으로 개발을 하곤 하였다. 그 무렵부터 ‘프로그래머’가 되겠다는 필자의 꿈이 태동했다고 생각한다. 당시에는 전혀 몰랐지만, 그 시절의 컴퓨터공학과는 비인기학과였고 개발자는 기피 직업 중 하나였다고 한다. 그로부터 불과 몇 년 사이에 세상은 변해 컴퓨터공학과의 입결은 하늘을 찌르고, 개발자는 유망 직종이 되었으며, 어디서든 쉽게 개발자 커뮤니티를 찾을 수 있게 되었다.</p></br></br><p>이런 이야기를 갑자기 왜 꺼내게 되었냐 하면, 얼마 전에 필자가 과거에 만들었던 자작 게임들 중 그나마 봐 줄 만한 것들을 추려서 <u><a href="https://github.com/eddylily/GameMaker"><span style="color: #f48fb1">필자의 GitHub</span></a></u>에 업로드하면서 과거를 회상하게 되었기 때문이다. 당시에는 나름 괜찮게 만들었다고 생각한 게임이, 성장하고 나서 지금의 시점에서 다시 보니 모든 것이 허술하고 버그투성이였다. 그림판으로 끄적인 듯한 스프라이트며 의도한 대로 작동하지 않는 오브젝트며…. 그럼에도 어찌저찌 돌아가는 게임을 플레이하며 추억에 잠겨있던 중 문득 어떤 생각이 들었다. </p></br><blockquote><h4 id="지금의-나라면-이-게임들의-완성도를-더-높일-수-있지-않을까"><a href="#지금의-나라면-이-게임들의-완성도를-더-높일-수-있지-않을까" class="headerlink" title="지금의 나라면 이 게임들의 완성도를 더 높일 수 있지 않을까?"></a><strong>지금의 나라면 이 게임들의 완성도를 더 높일 수 있지 않을까?</strong></h4></blockquote></br><p>그렇게 무작정 미완성 게임이나 버그가 많은 게임들을 붙잡고 뜯어고쳐보기로 했다. 일명 ‘리마스터’. 리마스터라고는 해도 외견은 거의 그대로 유지시킨 채 버그를 잡고 부족해 보이는 점들을 보완하는 것뿐이다. 정신적으로 힘든 상황에서 점점 꺼져만 가는 개발에 대한 열정의 불씨…. 그렇지만 이대로 아무 것도 하지 않는 것보다는 비록 보잘것없더라도 뭐라도 할 수 있는 걸 해 보자는 생각에서였다.</p></br><hr><h2 id="「터치터치」-리마스터"><a href="#「터치터치」-리마스터" class="headerlink" title="「터치터치」 리마스터"></a>「터치터치」 리마스터</h2></br><p>첫 리마스터 작품으로 고른 것은 필자가 2011년 2월에 개발한 <strong>터치터치</strong>라는 게임이다. 마우스나 터치패드를 이용하여 커서를 움직여 랜덤하게 출몰하는 빨간 버튼을 재빨리 눌러 없애야 하는 게임이다.</p></br><!-- ![(이미지: 터치터치 리마스터의 스크린샷)](/postimgs/touchtouch_remaster.png){: width="50%" height="50%"} --><img src="/postimgs/touchtouch_remaster.png" width="50%" height="50%"></br><p>두더지잡기 놀이에서 영감을 얻어 만들었던 이 게임은 낮은 그래픽 퀄리티는 둘째로 치더라도 당시의 미숙했던 구현 능력으로 인한 많은 버그를 안고 있었다. 빨간 버튼은 1.5초 안에 누르기만 하면 되는데, 간혹 1.5초가 지나지 않았는데도 게임 오버가 되기도 했다. 심지어는 실수로 지뢰 버튼을 눌렀을 때 100코인을 지불하지 못 하면 게임 오버가 되는데, 코인이 부족해도 그냥 게임이 진행되기도 했다. 이외에도 자잘한 버그들과 필요없는 기능들이 들어있었다.</p><p>우선 창 크기는 마우스나 터치패드로 버튼을 찾아 누르기 용이하도록 기존의 작은 창 크기를 유지하기로 했다. 다소 유치하고 초라해 보이는 스프라이트들 역시 나름 그 시절의 열정과 추억이 담겨있는 것들이기에 수정은 최소한으로 하고, 가능한 한 기존의 것을 그대로 유지하기로 했다. 대신 버그 수정이나 시스템의 체계화 등 게임의 기능적인 부분을 다듬는 데에 치중하기로 했다. 단순한 구조의 게임이었기에 3시간여 만에 완성할 수 있었다.</p></br><p>보다 자세한 내용은 <u><a href="https://github.com/eddylily/GameMaker/tree/master/TouchTouch"><span style=" color:#f48fb1">필자의 GitHub</span></a></u>에서 확인할 수 있다. 게임 개발 파일과 exe 파일도 다운로드 가능하다.</p></br><hr><h2 id="「클라우드-어드벤처」-리마스터"><a href="#「클라우드-어드벤처」-리마스터" class="headerlink" title="「클라우드 어드벤처」 리마스터"></a>「클라우드 어드벤처」 리마스터</h2></br><p>두 번째로 고른 것은 필자가 2011년 9월에 개발한 <strong>클라우드 어드벤처</strong>라는 게임이다. 맵 안에 있는 별을 모두 먹은 다음, 구름 블럭을 밟고 꼭대기로 올라가면 되는 게임이다.</p></br><p><img src="/postimgs/cloud_adventure_remaster.png" alt="(이미지: 클라우드 어드벤처 리마스터의 스크린샷)"></p></br><p>이 게임 역시 너무나도 많은 버그를 가지고 있었지만…. 게임을 진행하는 것 자체에는 큰 문제가 없었다. 의도와는 다르게 작동하는 게임 속 구름 블록들, 그러나 그런 엉망진창인 블록들을 이용해서 게임을 클리어해내고 마는 플레이어. 이것이야말로 <strong>‘버그가 아니라 기능입니다 :)’</strong> 의 표본 아닐까?</p><p>그럼에도 필자는 본디 의도했던대로 게임이 진행되는 모습을 보고 싶었다. 그렇게 며칠 동안 조금씩 버그를 고쳐 나갔다. 그러면서 과거의 자신이 왜 이런 기초적인 문제들을 해결하지 못 했는지 의문이 들었다. 이에 대해 필자는 개발에 대해 문외한이었던 어린 시기에 블록코딩(게임메이커)으로 코딩에 입문했고, 그 이외의 다른 기초지식을 배우지 못 했기 때문이라고 생각했다. 기본적인 컴퓨터 언어의 문법과 실행 원리만 파악하고 있었어도 그런 식으로 코드를 짜지 않았을 터이다. 어찌 됐든, 지금은 그 때보다는 성장했으니 그걸로 된 것 아닐까.</p></br><p>보다 자세한 내용은 <u><a href="https://github.com/eddylily/GameMaker/tree/master/Cloud%20Adventure"><span style="color: #f48fb1">필자의 GitHub</span></a></u>에서 확인할 수 있다. 게임 개발 파일과 exe 파일도 다운로드 가능하다.</p></br><hr><h2 id="개발-환경"><a href="#개발-환경" class="headerlink" title="개발 환경"></a>개발 환경</h2></br><p>필자는 기존에 개발했던 게임들을 앞으로도 몇 개 더 리마스터할 생각이다. 위의 게임들은 모두 <strong><span style="color: #689f38">GameMaker™ 8.0</span></strong> <span style="font-size:80%">(.gmk 확장자)</span>, 그러니까 구 버전 게임메이커로 개발한 것이다. 비록 지금은 해당 버전은 사후 지원이 끊긴 지 오래이지만, 리마스터링 또한 해당 툴로 진행하고 있다. YoYo Games는 2012년에 기존의 게임메이커를 리뉴얼한 <strong><span style="color: #4caf50">GameMaker: Studio™</span></strong> <span style="font-size:80%">(.gmx 확장자)</span>를 출시했고, 이어서 2017년에는 <a href="https://gamemaker.io/ko-KR"><strong><span style="color: #00bcd4">GameMaker™ Studio 2</span></strong></a> <span style="font-size:80%">(.yyp 확장자)</span>를 출시했다.</p><p>각자 다른 확장자를 가지고 있기도 하고, 소스 파일 변환 과정을 거치지 않는 한 이들은 서로 호환되지 않는다. .gmk 파일을 .gmx 파일로, 혹은 .gmx 파일을 .yyp 파일로 변환하는 것은 비록 완벽하지는 않지만 공식 기능으로서 지원된다. 그러나 .gmk 파일을 .yyp 파일로 직접 변환하는 것은 불가능하다. 그럼 .gmk 파일을 .gmx 파일로 변환한 다음 그것을 다시 .yyp 파일로 변환하면 되는 것 아니냐고 생각할 수도 있지만, 두 번의 변환을 거친 파일의 품질을 보장할 수 없을 뿐더러, 10년도 더 전에 작성한 스파게티 코드로 점철된 소스 파일을 갈아엎어야 하는 것은 매한가지이다.</p><p>애초에 기존 작품들의 소스 파일이 <strong><span style="color: #689f38">GameMaker™ 8.0</span></strong>, 그러니까 구 버전 게임메이커에서 쓰여졌고, 필자에게도 아직은 구 버전이 더 익숙하기 때문에 리마스터 작업은 앞서 말했듯 구 버전 게임메이커로 진행하기로 했다.</p></br><hr><h2 id="앞으로의-계획"><a href="#앞으로의-계획" class="headerlink" title="앞으로의 계획"></a>앞으로의 계획</h2></br><p>무릇 소프트웨어 엔지니어를 꿈꾸는 자는 끊임없이 도전하고 항상 새로운 것을 배워야 하기 마련이다. 그러나 필자는 그렇게 하지 못 하고 있다. 아니, 안 하고 있다. 어릴 적 만져본 게임메이커, 대학교 교양 강의 수준에 머물러 있는 C언어와 Python 지식, 반 년 정도 하다가 때려친 Android 앱 개발 정도가 지금의 필자가 가진 지식의 전부이다. 이래서야 앞으로 전공을 살려 일하는 건 무리다. 배우려는 의지가 없는 사람이 무슨 발전이 있겠는가.</p><p>다른 사람들이 매일 실력을 갈고 닦고 스펙을 쌓아가는 와중에, 필자는 또 엉뚱한 계획을 세운다. 바로 <u><a href="https://gamemaker.io/ko-KR"><strong><span style="color: #00bcd4">GameMaker™ Studio 2</span></strong></a></u>를 이용하여 Windows 환경과 macOS 환경에서 모두 구동되는 횡스크롤 RPG 게임을 개발하는 것이다. 연내에 베타 버전을 완성시키는 것이 목표이다. 사실 이것은 10여 년 전 중학생이었던 필자의 꿈이기도 했다. 마침 휴학도 했겠다 남아도는 것이 시간이니 지금이야말로 이 목표를 이루기에 적기가 아닐까. 아무리 지금의 ‘나’가 못났다 해도 10여 년 전의 ‘나’보다는 많이 성장했다고 생각한다. 글은 이 쯤에서 마무리. 조만간 새로운 포스팅에서 만납시다.</p>]]></content>
     
@@ -98,6 +102,8 @@
     
     
     <category term="게임메이커" scheme="https://blog.edward.moe/categories/%EA%B2%8C%EC%9E%84%EB%A9%94%EC%9D%B4%EC%BB%A4/"/>
+    
+    <category term="과거작" scheme="https://blog.edward.moe/categories/%EA%B2%8C%EC%9E%84%EB%A9%94%EC%9D%B4%EC%BB%A4/%EA%B3%BC%EA%B1%B0%EC%9E%91/"/>
     
     
     <category term="GameMaker™" scheme="https://blog.edward.moe/tags/GameMaker%E2%84%A2/"/>
@@ -109,7 +115,7 @@
     <link href="https://blog.edward.moe/2022/01/21/How-to-install-tensorflow-on-m1-mac/"/>
     <id>https://blog.edward.moe/2022/01/21/How-to-install-tensorflow-on-m1-mac/</id>
     <published>2022-01-21T13:15:48.000Z</published>
-    <updated>2022-09-19T07:58:47.936Z</updated>
+    <updated>2022-01-21T13:15:48.000Z</updated>
     
     <content type="html"><![CDATA[</br><p>뜬금없지만 자랑부터 하자면, 필자는 최근에 M1 Pro 칩셋이 탑재된 신형 맥북 프로를 선물받았다. (와!) 이전에 쓰던 맥북 에어와는 차원이 다른 빠릿함이 낯설게만 느껴졌다. 가히 최고의 성능을 자랑하는 맥북 프로이지만, 아직 문제점이 몇 가지 있다. 그 중 하나는 바로 기존의 x86 아키텍처에서 구동되던 프로그램들의 상당수가 Apple Sillicon(애플 실리콘, 최신 맥북에 탑재되는 애플이 자체 개발한 칩셋)에 최적화되어 있지 않다는 것이다.</p><span id="more"></span></br>TensorFlow를 다뤄본 적 없었던 필자는 우선 Anaconda-Navigator를 이용하여 가상 환경을 구축한 다음, TensorFlow를 설치하고자 했었다. 그러나 몇 번의 삽질과 구글링을 하던 와중에 Anaconda-Navigator가 애플 실리콘에서 제대로 구동되지 않는다는 정보를 알게 되었다. (아뿔싸!) 대신, 무려 애플 공식 개발자 사이트에서 애플 실리콘이 탑재된 Mac에 TensorFlow를 설치하는 방법을 친절하게 설명해 주고 있다는 사실 또한 알게 되었다. [(여기를 누르면 볼 수 있다)](https://developer.apple.com/metal/tensorflow-plugin/)</br><p>위의 링크로 들어가서 ‘arm64: Apple Sillicon’ 이라는 제목 아래에 있는 과정들을 전부 따라하면 된다. 해당 포스팅에도 설명을 해 두겠다. </p></br><p>우선 <a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh">여기에서</a> 애플 실리콘 전용 Conda env를 다운로드받은 다음, 아래의 명령어를 차례대로 터미널에 입력한다. 이는 애플 실리콘이 탑재된 Mac에서도 Conda 개발 환경을 구축할 수 있도록 해 주는 ‘Miniforge3’라는 툴을 설치하는 과정이다.<br></br><br>    $ chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh<br>    $ sh ~/Downloads/Miniforge3-MacOSX-arm64.sh<br>    $ source ~/miniforge3/bin/activate<br></br><br>설치가 완료되었으면, 이번에는 아래 명령어를 입력하여 TensorFlow에 필요한 속성 파일들을 설치해준다.<br></br><br>    $ conda install -c apple tensorflow-deps<br></br><br>이제 거의 다 끝났다. 남은 것은 아래의 두 명령어를 터미널에 입력해주는 것뿐이다.<br></br><br>    $ python -m pip install tensorflow-macos<br>    $ python -m pip install tensorflow-metal<br></br><br>이렇게 해서 애플 실리콘이 탑재된 Mac에서 TensorFlow를 사용할 수 있게 되었다. Conda를 이용해 따로 가상의 개발 환경을 구축한 다음 Jupyter Notebook을 통해 사용할 수도 있는데, 이는 다음 포스팅에서 다루어보도록 하겠다. </p>]]></content>
     
@@ -120,10 +126,12 @@
     
     
     
-    <category term="잡다한 개발 이야기" scheme="https://blog.edward.moe/categories/%EC%9E%A1%EB%8B%A4%ED%95%9C-%EA%B0%9C%EB%B0%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0/"/>
+    <category term="인공지능" scheme="https://blog.edward.moe/categories/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5/"/>
+    
+    <category term="텐서플로우" scheme="https://blog.edward.moe/categories/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5/%ED%85%90%EC%84%9C%ED%94%8C%EB%A1%9C%EC%9A%B0/"/>
     
     
-    <category term="AI" scheme="https://blog.edward.moe/tags/AI/"/>
+    <category term="TensorFlow" scheme="https://blog.edward.moe/tags/TensorFlow/"/>
     
   </entry>
   
@@ -132,7 +140,7 @@
     <link href="https://blog.edward.moe/2021/12/24/How-to-apply-Hexo-Theme/"/>
     <id>https://blog.edward.moe/2021/12/24/How-to-apply-Hexo-Theme/</id>
     <published>2021-12-24T01:51:57.000Z</published>
-    <updated>2022-01-21T13:18:22.275Z</updated>
+    <updated>2021-12-24T01:51:57.000Z</updated>
     
     <content type="html"><![CDATA[</br><p>테마를 설치했다면 이제는 적용해 볼 차례이다. 여기서 필자는 꽤나 많이 애를 먹었다. 총 3번의 실패를 겪었고, 결국은 가장 대중적으로 쓰이는 icarus라는 테마에 일단은 정착하기로 했다. 실패의 과정에 대해서는 이어서 간단히 서술하겠다.</p><span id="more"></span></br><h3 id="‘Hexo-not-found’-에러"><a href="#‘Hexo-not-found’-에러" class="headerlink" title="‘Hexo not found’ 에러"></a>‘Hexo not found’ 에러</h3></br><p>엊그제까지만 해도 잘 구동되던 Hexo가 어느 날 갑자기 먹통이 되었다. 아무리 Hexo 관련 명령어를 터미널에 입력해보아도 Hexo를 찾을 수 없다는 에러 메시지만이 나를 맞이했다. </p></br><pre><code>$ npm config set prefix /usr/local</code></pre></br><p>내용을 입력하세요.</p></br><h3 id="Claudia-테마"><a href="#Claudia-테마" class="headerlink" title="Claudia 테마"></a>Claudia 테마</h3></br><p>디자인도 마음에 들었고 처음에 딱 꽂혔던 테마였다. 그런데 이 테마는 딸려오는 플러그인이 너무 많았다. 그 중에서 sass 플러그인이 필자의 컴퓨터와 계속해서 충돌을 일으켜서 결국 적용을 포기했다.</p></br><h3 id="Anisina-테마"><a href="#Anisina-테마" class="headerlink" title="Anisina 테마"></a>Anisina 테마</h3></br><p>그래서 이번에는 가급적 추가적인 플러그인 설치가 필요치 않은 테마를 찾아보기로 했다. 그렇게 발견한 것이 이 테마다. 그런데 초보자가 뜯어고치기에는 너무나 어려운 구조로 되어 있었다. 그래서 결국 이 테마도 포기했다. </p></br><h3 id="Icarus-테마"><a href="#Icarus-테마" class="headerlink" title="Icarus 테마"></a>Icarus 테마</h3><p>구글링만 해 봐도 알 수 있듯이, Hexo로 구축된 블로그에서 가장 대중적으로 쓰이는 테마이다. 생김새도 무난하며 디자인을 수정하기도 쉬운 편이다. 수정하다 막히는 부분이 생겨도 구글링하면 어지간하면 다 나온다. 한국어로 설명된 자료도 많은 편이라 굳이 영어나 일본어로 적힌 블로그까지 찾아보지 않아도 괜찮았다.</p>]]></content>
     
@@ -143,7 +151,9 @@
     
     
     
-    <category term="블로그 개발일지" scheme="https://blog.edward.moe/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    <category term="웹" scheme="https://blog.edward.moe/categories/%EC%9B%B9/"/>
+    
+    <category term="블로그" scheme="https://blog.edward.moe/categories/%EC%9B%B9/%EB%B8%94%EB%A1%9C%EA%B7%B8/"/>
     
     
     <category term="Hexo" scheme="https://blog.edward.moe/tags/Hexo/"/>
@@ -155,7 +165,7 @@
     <link href="https://blog.edward.moe/2021/12/20/How-to-install-Hexo-Theme/"/>
     <id>https://blog.edward.moe/2021/12/20/How-to-install-Hexo-Theme/</id>
     <published>2021-12-20T11:12:31.000Z</published>
-    <updated>2021-12-24T02:36:13.000Z</updated>
+    <updated>2021-12-20T11:12:31.000Z</updated>
     
     <content type="html"><![CDATA[</br><p>테마를 설치하는 방법 자체는 단순하다. 크게 두 가지 방법이 있는데, 첫 번째는 해당 테마의 GitHub 레포지터리를 클론해오는 방법이고 두 번째는 터미널에 Hexo의 테마 설치 명령어를 입력하는 방법이다. </p><span id="more"></span><p>전자의 방법을 따르고 싶다면 우선 터미널에서 hexo 폴더 내의 themes 디렉토리로 이동한 다음, 아래와 같은 명령어를 입력하면 된다.</p></br><pre><code>$ git clone &lt;주소&gt;</code></pre></br><p>‘&lt;주소&gt;’ 를 해당 테마의 GitHub 레포지터리 주소ー보통은 해당 테마의 설명서를 읽어보면 나와있곤 하다ー로 대체하여 적어넣으면 된다.</p><p>후자의 방법을 따르고 싶다면 아래와 같은 명령어를 입력하면 된다. (전자와 후자, 둘 중 하나의 방법만 고르면 된다.)</p><pre><code>$ npm install &lt;테마명&gt;</code></pre></br><p>‘&lt;테마명&gt;’ 을 해당 테마의 이름ー보통은 hexo-theme-themename’의 구조로 되어있으며, 역시 해당 테마의 설명서를 읽어보면 나와있곤 하다ー으로 대체하여 적어넣으면 된다.</p></br></br><p>설치가 다 되었다면 아래와 같은 명령어를 입력해준다. 블로그의 테마를 변경해주는 명령어이다.</p></br><pre><code>$ hexo config theme &lt;테마폴더명&gt;</code></pre></br><p>‘&lt;테마폴더명&gt;’ 을 themes 디렉토리 아래에 있는 해당 테마의 폴더명으로 대체하여 적어넣으면 된다. 혹은, hexo 폴더의 _config.yml 파일에 들어가서 ‘themes: ‘ 항목을 해당 테마의 폴더명으로 직접 대체해도 된다. 위의 명령어는 단지 이 과정을 터미널을 통해 수행해주는 것뿐이다.</p><p></br></br></p><p>이제 테마를 설치하고 적용하는 과정은 모두 끝났다. 남은 것은 테마의 세세한 부분을 뜯어고치는 것뿐이다. 이것에 대해서는 다음 포스팅에서 다루도록 하겠다.</p><p></br></br></p>]]></content>
     
@@ -166,7 +176,9 @@
     
     
     
-    <category term="블로그 개발일지" scheme="https://blog.edward.moe/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    <category term="웹" scheme="https://blog.edward.moe/categories/%EC%9B%B9/"/>
+    
+    <category term="블로그" scheme="https://blog.edward.moe/categories/%EC%9B%B9/%EB%B8%94%EB%A1%9C%EA%B7%B8/"/>
     
     
     <category term="Hexo" scheme="https://blog.edward.moe/tags/Hexo/"/>
@@ -178,7 +190,7 @@
     <link href="https://blog.edward.moe/2021/12/13/How-to-make-Hexo-Blog/"/>
     <id>https://blog.edward.moe/2021/12/13/How-to-make-Hexo-Blog/</id>
     <published>2021-12-13T13:52:49.000Z</published>
-    <updated>2021-12-22T11:21:26.000Z</updated>
+    <updated>2021-12-13T13:52:49.000Z</updated>
     
     <content type="html"><![CDATA[</br><p>이전에도 블로그를 운영해 본 경험은 많이 있었지만, 이렇게 직접 밑바닥부터(?) 하나하나 쌓아가며 만든 블로그는 여기가 처음이다. 사실 아예 무에서 유를 창조한 것은 아니고, Hexo라는 툴의 도움을 받았다. Hexo가 무엇인지에 대해서는 이미 다른 블로거들이 충분히 설명해두었을 테니, 여기서는 빠르게 여러분이 원하는 본론ー블로그를 설치하는 과정으로 들어가겠다.</p><span id="more"></span></br><p>사실 <a href="https://hexo.io/ko/docs/">https://hexo.io/ko/docs/</a> 에 들어가면 모든 내용이 설명되어 있긴 하다. 영어 독해가 되시는 분은 <a href="https://hexo.io/docs/">https://hexo.io/docs/</a> 를 보셔도 좋다.</p><p>필자의 컴퓨터에는 Git이나 Node.js는 이미 설치되어 있었기에 위 문서에서 설명하는 대로 Hexo를 설치하기 위해 곧바로 터미널에 다음과 같이 명령어를 입력했다. </p></br><pre><code>$ npm install -g hexo-cli</code></pre></br><p>그런데 ERESOLVE 에러가 나며 설치가 되지 않았다. </p><p><a href="https://sugimotonote.com/2017/10/31/npm-install-error/">이 블로거</a> 분께서 말씀하시길, Node.js의 버전과 npm의 버전에 따라서 서로 호환이 잘 안 되는 경우가 있다고 한다. 초보자로서 잘은 모르겠지만 그러려니 하며 일단 16.x 버전의 Node.js를 구버전인 12.x 버전으로 다운그레이드하기로 했다.</p><p>다음 명령어를 입력하면 기존에 설치된 Node.js의 버전을 v12.18.3으로 다운그레이드할 수 있다.</p></br><pre><code>$ npm install -g n$ n 12.18.3</code></pre></br><p>다운그레이드가 잘 되었는지는 다음 명령어를 통해 확인할 수 있다. 자신이 설치하고자 한 버전과 같은 숫자가 뜨면 성공한 것이다. </p></br><pre><code>$ node -v</code></pre><p></br></br></p><p>아무튼 이렇게 해서 Hexo를 설치했다면, 다음은 블로그 환경을 구축할 차례이다. 적당한 곳에 새로운 폴더를 만들고 해당 디렉토리에 들어간 다음, Hexo 블로그 환경을 구축하기 위한 명령어를 입력해준다.</p></br><pre><code>$ hexo init hexo$ cd hexo$ npm install</code></pre></br><p>첫 번째 명령어는 Hexo의 초기 환경을 세팅하는 명령어이다. ‘hexo’ 라는 하위 폴더에 필요한 파일들을 설치한다는 의미로 이해하면 된다. 그리고 두 번째 명령어를 입력하여 앞서 만들어진 하위 폴더로 이동한 다음, 세 번째 명령어를 입력하여 Hexo 구동에 필요한 Node 모듈을 설치해주는 것이다. </p><p>위의 과정을 모두 끝마쳤다면 터미널에 다음과 같은 명령어를 입력하여 설치가 잘 되었는지 테스트해보자.<br></br></p><pre><code>$ hexo server</code></pre></br><p>위의 명령어는 로컬 서버를 가동하는 명령어로, 입력하였을 때 별다른 에러가 발생하지 않는다면 성공한 것이다. 주소창에 ‘localhost:4000’ 을 입력하여 들어가보면 기본 테마가 적용된 Hexo 블로그의 모습이 나타날 것이다.</p></br><pre><code>$ hexo server -o</code></pre></br><p>혹은 위와 같이 명령어 뒤에 ‘-o’ 를 붙이면 로컬 서버를 가동시키는 동시에 새 창을 띄워 자신의 블로그 페이지의 모습을 확인할 수 있다. 필요에 따라 두 명령어 중 하나를 사용하면 된다. </p><p></br></br></p><p>이상으로 기본적인 Hexo 설치 및 블로그 환경 설정 과정을 설명하였다. 다음에는 블로그에 새로운 테마를 적용하고 테마를 수정했던 과정에 대해 포스팅하겠다. 필자는 의외로 이 부분에서 꽤 고생했기 때문에 부디 해당 포스팅이 조금이나마 다른 초보자들에게 도움이 되었으면 좋겠다. </p><p></br></br></p>]]></content>
     
@@ -189,7 +201,9 @@
     
     
     
-    <category term="블로그 개발일지" scheme="https://blog.edward.moe/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    <category term="웹" scheme="https://blog.edward.moe/categories/%EC%9B%B9/"/>
+    
+    <category term="블로그" scheme="https://blog.edward.moe/categories/%EC%9B%B9/%EB%B8%94%EB%A1%9C%EA%B7%B8/"/>
     
     
     <category term="Hexo" scheme="https://blog.edward.moe/tags/Hexo/"/>
@@ -201,7 +215,7 @@
     <link href="https://blog.edward.moe/2021/12/11/%EB%82%B4%EA%B0%80-%ED%95%B4%EB%83%84/"/>
     <id>https://blog.edward.moe/2021/12/11/%EB%82%B4%EA%B0%80-%ED%95%B4%EB%83%84/</id>
     <published>2021-12-10T18:00:00.000Z</published>
-    <updated>2022-09-19T08:06:34.118Z</updated>
+    <updated>2021-12-10T18:00:00.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="이걸-해냄"><a href="#이걸-해냄" class="headerlink" title="이걸 해냄"></a>이걸 해냄</h2><p>감사해요 하루님!!!</p>]]></content>
     
@@ -214,7 +228,9 @@
     
     
     
-    <category term="블로그 개발일지" scheme="https://blog.edward.moe/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EB%B0%9C%EC%9D%BC%EC%A7%80/"/>
+    <category term="웹" scheme="https://blog.edward.moe/categories/%EC%9B%B9/"/>
+    
+    <category term="블로그" scheme="https://blog.edward.moe/categories/%EC%9B%B9/%EB%B8%94%EB%A1%9C%EA%B7%B8/"/>
     
     
   </entry>

@@ -32,6 +32,8 @@
       
       <categories>
           
+          <category> 게임메이커 </category>
+          
           <category> 퇴마묵시록 </category>
           
       </categories>
@@ -57,7 +59,9 @@
       
       <categories>
           
-          <category> 웹개발 </category>
+          <category> 웹 </category>
+          
+          <category> CV </category>
           
       </categories>
       
@@ -84,6 +88,8 @@
           
           <category> 게임메이커 </category>
           
+          <category> 과거작 </category>
+          
       </categories>
       
       
@@ -107,14 +113,16 @@
       
       <categories>
           
-          <category> 잡다한 개발 이야기 </category>
+          <category> 인공지능 </category>
+          
+          <category> 텐서플로우 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> AI </tag>
+            <tag> TensorFlow </tag>
             
         </tags>
       
@@ -132,7 +140,9 @@
       
       <categories>
           
-          <category> 블로그 개발일지 </category>
+          <category> 웹 </category>
+          
+          <category> 블로그 </category>
           
       </categories>
       
@@ -157,7 +167,9 @@
       
       <categories>
           
-          <category> 블로그 개발일지 </category>
+          <category> 웹 </category>
+          
+          <category> 블로그 </category>
           
       </categories>
       
@@ -182,7 +194,9 @@
       
       <categories>
           
-          <category> 블로그 개발일지 </category>
+          <category> 웹 </category>
+          
+          <category> 블로그 </category>
           
       </categories>
       
@@ -207,7 +221,9 @@
       
       <categories>
           
-          <category> 블로그 개발일지 </category>
+          <category> 웹 </category>
+          
+          <category> 블로그 </category>
           
       </categories>
       
