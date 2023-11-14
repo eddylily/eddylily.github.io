@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>ARM Mac에서 발생한 다양한 MySQL 에러 해결 - Edward*</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Edward*"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Edward*"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="에드의 잡다한 이야기"><meta property="og:type" content="blog"><meta property="og:title" content="Edward*의 블로그"><meta property="og:url" content="blog.edward.moe"><meta property="og:site_name" content="Edward*"><meta property="og:description" content="에드의 잡다한 이야기"><meta property="og:locale" content="en_US"><meta property="og:image" content="/img/og_image.png"><meta property="article:published_time" content="2023-11-14T07:00:00.000Z"><meta property="article:modified_time" content="2023-11-14T07:00:00.000Z"><meta property="article:author" content="Edward*"><meta property="article:tag" content="MySQL"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><meta property="twitter:creator" content="@eddylily00"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.edward.moe/2023/11/14/mysql-errors-on-apple-silicon/"},"headline":"ARM Mac에서 발생한 다양한 MySQL 에러 해결","image":["https://blog.edward.moe/postimgs/mysql_00.png","https://blog.edward.moe/postimgs/mysql_01.png"],"datePublished":"2023-11-14T07:00:00.000Z","dateModified":"2023-11-14T07:00:00.000Z","author":{"@type":"Person","name":"Edward*"},"publisher":{"@type":"Organization","name":"Edward*","logo":{"@type":"ImageObject","url":"https://blog.edward.moe/img/logo.png"}},"description":"M1 맥북 프로를 사용한 지 어언 3년이 지났지만 여전히 난감한 순간이 종종 있다. 이번에 겪은 MySQL 관련 이슈는 그 중 가장 골치아픈 녀석이었다. 참고로 필자가 겪은 시행착오가 모두 담겨져 있으므로 무작정 순서대로 따라하지 마시고, 우선 한 번 정독해 주시길 바란다."}</script><link rel="canonical" href="https://blog.edward.moe/2023/11/14/mysql-errors-on-apple-silicon/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="/fonts/GoyangIlsan.css"><link rel="stylesheet" href="https://raw.githubusercontent.com/eddylily/projectlily/main/GoyangIlsan.css"><link rel="stylesheet" href="https://webfontworld.github.io/naver/NanumSquare.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Edward*" type="application/atom+xml">
+</head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="Edward*" height="32"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" target="_blank" rel="noopener" href="https://edward.moe/">About Me</a></div><div class="navbar-end"><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-9-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;2023. 11. 14.</span><span class="level-item"><a class="link-muted" href="/categories/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/">데이터베이스</a></span></div></div><h1 class="title is-3 is-size-4-mobile">ARM Mac에서 발생한 다양한 MySQL 에러 해결</h1><div class="content"></br>
+
+<p>M1 맥북 프로를 사용한 지 어언 3년이 지났지만 여전히 난감한 순간이 종종 있다. 이번에 겪은 MySQL 관련 이슈는 그 중 가장 골치아픈 녀석이었다. 참고로 필자가 겪은 시행착오가 모두 담겨져 있으므로 무작정 순서대로 따라하지 마시고, 우선 한 번 정독해 주시길 바란다.</p>
+<span id="more"></span>
+
+<h2 id="1-root-계정으로의-접속-불가-이슈"><a href="#1-root-계정으로의-접속-불가-이슈" class="headerlink" title="1. root 계정으로의 접속 불가 이슈"></a>1. root 계정으로의 접속 불가 이슈</h2></br>
+
+<pre><code>$ mysql -u root
+$ ERROR 1045 (28000): Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: NO)
+</code></pre>
+</br>
+
+<pre><code>$ sudo mysql -u root -p
+$ Enter password: 
+$ ERROR 1045 (28000): Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+</code></pre>
+</br>
+
+<p>분명히 root 계정의 초기 비밀번호는 없을 텐데 어떤 방법을 시도해 보아도 MySQL에 접속할 수 없었다.</p>
+</br>
+
+<h2 id="2-MySQL-재설치-Anaconda-Homebrew"><a href="#2-MySQL-재설치-Anaconda-Homebrew" class="headerlink" title="2. MySQL 재설치 (Anaconda, Homebrew)"></a>2. MySQL 재설치 (Anaconda, Homebrew)</h2></br>
+
+<ul>
+<li>참고: <a target="_blank" rel="noopener" href="https://github.com/rangyu/TIL/blob/master/mysql/MySQL-%EC%99%84%EC%A0%84-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B3%A0-%EC%9E%AC%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0-(MacOS).md">rangyu님의 문서</a></li>
+</ul>
+</br>
+
+<pre><code>$ brew install mysql
+</code></pre>
+</br>
+
+<p>위의 명령어를 이용해 Homebrew를 통해 MySQL을 설치했었다. 그런데 터미널에 MySQL이 설치된 경로를 알려주는 명령어를 입력했더니 다음과 같은 결과가 나왔다.</p>
+</br>
+
+<pre><code>$ where mysql
+$ ~/Documents/Anaconda3/bin/mysql
+</code></pre>
+</br>
+
+<p>어째서인지 Anaconda에 설치된 MySQL만 인식이 되었다. 어차피 쓰지 않을 녀석인지라 해당 경로에 들어가서 ‘mysql’로 시작하는 파일들을 전부 지워 주었다. 그리고 Homebrew를 통해 설치한 MySQL도 깔끔하게 지운 뒤 재설치하기로 하였다. </p>
+<p>우선 아래의 명령어를 입력해 실행 중인 MySQL 프로세스를 중지시킨다.</p>
+</br>
+
+<pre><code>$ brew services stop mysql
+</code></pre>
+</br>
+
+<p>그런 다음 삭제 명령어를 입력해 준다.</p>
+</br>
+
+<pre><code>$ brew uninstall --force mysql
+</code></pre>
+</br>
+
+<p>확실하게 지워주기 위해 아래의 명령어들을 차례대로 입력해 준다.</p>
+</br>
+
+<pre><code>$ sudo rm -rf /usr/local/mysql
+$ sudo rm -rf /usr/local/bin/mysql
+$ sudo rm -rf /usr/local/var/mysql
+$ sudo rm -rf /usr/local/Cellar/mysql
+$ sudo rm -rf /usr/local/mysql*
+$ sudo rm -rf /tmp/mysql.sock.lock
+$ sudo rm -rf /tmp/mysqlx.sock.lock
+$ sudo rm -rf /tmp/mysql.sock
+$ sudo rm -rf /tmp/mysqlx.sock
+$ sudo rm ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+$ sudo rm -rf /Library/StartupItems/MySQLCOM
+$ sudo rm -rf /Library/PreferencePanes/My*
+</code></pre>
+</br>
+
+<p>그러고 나서 다시 Homebrew를 통해 MySQL을 설치한 다음, 설치 경로를 확인해 보니 제대로 된 경로가 나온다.</p>
+</br>
+
+<pre><code>$ where mysql
+$ /opt/homebrew/bin/mysql
+</code></pre>
+</br>
+
+<p>그러나 이번에는 또 다른 에러가 나를 반갑게 맞아주었다.</p>
+</br>
+
+<h2 id="3-소켓-에러-ー-ERROR-2002-HY000"><a href="#3-소켓-에러-ー-ERROR-2002-HY000" class="headerlink" title="3. 소켓 에러 ー ERROR 2002 (HY000)"></a>3. 소켓 에러 ー ERROR 2002 (HY000)</h2><p>우선 설치한 MySQL을 실행해 준다. </p>
+</br>
+
+<pre><code>$ brew services start mysql
+$ ==&gt; Successfully started `mysql` (label: homebrew.mxcl.mysql)
+</code></pre>
+</br>
+
+<p>그러나 이번에는 다음과 같은 에러가 발생했다. </p>
+</br>
+
+<pre><code>$ mysql
+$ ERROR 2002 (HY000): Can&#39;t connect to local MySQL server through socket &#39;/tmp/mysql.sock&#39; (2)
+</code></pre>
+</br>
+
+<pre><code>$ mysql.server start
+$ Starting MySQL
+$ ... ERROR! The server quit without updating PID file (/opt/homebrew/var/mysql/Edwardui-MacBookPro.local.pid).
+</code></pre>
+</br>
+
+<ul>
+<li>참고: <a target="_blank" rel="noopener" href="https://zenn.dev/ryotaf/articles/6f5d12bda1f227">ryotaf님의 블로그</a></li>
+</ul>
+<p>다음 경로로 들어가서 ls를 입력해 보면 MySQL 관련 에러 로그 파일이 있을 것이다.</p>
+</br>
+
+<pre><code>$ cd /opt/homebrew/var/mysql/ 
+$ ls
+$ ...
+$ Edwardui-MacBookPro.local.err // 기기의 이름에 따라 파일명이 다름
+$ ...
+</code></pre>
+</br>
+
+<p>다음 명령어를 입력해 로그를 열어보았다.</p>
+</br>
+
+<pre><code>$ vi Edwardui-MacBookPro.local.err  // 기기의 이름에 따라 파일명이 다름
+</code></pre>
+</br>
+
+<p>그랬더니 다음과 같은 로그가 남아 있었다.</p>
+</br>
+
+<pre><code>$ [Server] Can&#39;t start server: Bind on TCP/IP port: Address already in use
+$ [Server] Do you already have another mysqld server running on port: 3306 ?
+$ [Server] Aborting
+</code></pre>
+</br>
+
+<p>그러니까, 3306 포트를 이미 다른 프로세스가 사용 중일 수 있다는 말이었다. 그러나 짐작가는 것이 없었다.</p>
+</br>
+
+<pre><code>$ lsof -i TCP:3306
+</code></pre>
+</br>
+
+<p>3306 포트를 사용 중인 프로세스를 찾는 명령어를 사용해 봤지만 아무 것도 나오지 않았다.</p>
+</br>
+
+<pre><code>$ mysql --help 
+</code></pre>
+</br>
+
+<p>위의 명령어를 입력하고 아래로 스크롤하다 보면 다음과 같이 config 파일의 경로가 나온다.</p>
+</br>
+
+<pre><code>$ ...
+$ Default options are read from the following files in the given order:
+$ /etc/my.cnf /etc/mysql/my.cnf /opt/homebrew/etc/my.cnf ~/.my.cnf 
+$ ...
+</code></pre>
+</br>
+
+<p>보통은 /opt/homebrew/etc/my.cnf에 작성되어 있다.</p>
+</br>
+
+<pre><code>$ vi /opt/homebrew/etc/my.cnf
+</code></pre>
+</br>
+
+<p>vi 또는 다른 편집 툴을 이용해 해당 파일에 ‘PORT = 3307’(즉 3306이 아닌 다른 포트 번호)을 추가해 주었다. 그러나 여전히 같은 에러가 반복되었다.</p>
+<ul>
+<li>참고: <a target="_blank" rel="noopener" href="https://harrythegreat.tistory.com/entry/mac-brew%EC%97%90%EC%84%9C-%EC%84%A4%EC%B9%98%ED%95%9C-mysql-mycnf%EA%B0%80-%EC%95%88%EB%A8%B9%EC%9D%84%EB%95%8C">harryTheGreat님의 블로그</a></li>
+</ul>
+<p>위의 자료에 따르면 Homebrew로 설치한 MySQL의 경우 특정 설정 파일이 기존 config 파일을 덮어쓰므로 소용이 없다고 하는데, 이를 해결할 방법은 찾지 못했다.</p>
+</br>
+
+<h2 id="4-MySQL-재설치-dmg"><a href="#4-MySQL-재설치-dmg" class="headerlink" title="4. MySQL 재설치 (.dmg)"></a>4. MySQL 재설치 (.dmg)</h2></br>
+
+<p>그래서 결단을 내렸다. Homebrew로 설치한 MySQL을 위의 2번 과정을 반복해 말끔히 지우고, MySQL 커뮤니티 서버의 패키지 파일(.dmg)을 다운로드받아 설치하기로 했다.</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">여기서 다운로드받을 수 있다.</a></li>
+</ul>
+<p>기기에 알맞은 DMG Archive를 다운로드 후 실행하여 설치하면 된다.</p>
+</br>
+
+<h2 id="5-caching-sha2-password-플러그인-이슈"><a href="#5-caching-sha2-password-플러그인-이슈" class="headerlink" title="5. caching_sha2_password 플러그인 이슈"></a>5. caching_sha2_password 플러그인 이슈</h2></br>
+
+<pre><code>$ MySQLdb._exceptions.OperationalError: (2059, &quot;Authentication plugin &#39;caching_sha2_password&#39; cannot be loaded: dlopen(/Users/eddylily/Documents/anaconda3/lib/plugin/caching_sha2_password.so, 0x0002): tried: &#39;/Users/eddylily/Documents/anaconda3/lib/plugin/caching_sha2_password.so&#39; (no such file), &#39;/System/Volumes/Preboot/Cryptexes/OS/Users/eddylily/Documents/anaconda3/lib/plugin/caching_sha2_password.so&#39; (no such file), &#39;/Users/eddylily/Documents/anaconda3/lib/plugin/caching_sha2_password.so&#39; (no such file)&quot;)
+</code></pre>
+</br>
+
+<p>다른 팀원분께서 만드신 Django 프로젝트를 불러와 실행해야 하는데, 또 생소한 에러가 내 앞을 가로막았다. 이번 에러의 경우 비교적 간단하게 해결할 수 있었다.</p>
+</br>
+
+<img src="/postimgs/mysql_00.png" width="50%" height="50%">
+
+</br>
+
+<p>Mac의 설정에 들어가서 맨 아래로 내려보면 MySQL 메뉴가 생긴 것을 볼 수 있다. MySQL 서버가 실행 중인지 확인해 준 다음, Initialize Database 버튼을 눌러준다.</p>
+</br>
+
+<img src="/postimgs/mysql_01.png" width="50%" height="50%">
+
+</br>
+
+<p>Use Legacy Password Encryption(아래) 옵션을 체크해 주고, root 계정에서 사용할 비밀번호를 입력해 준 다음 OK를 눌러 저장한다.</p>
+<p>이 비밀번호를 Django 프로젝트의 settings.py에도 반영해 준다.</p>
+</br>
+
+<p>마침내 프로젝트가 정상적으로 실행이 되었다!</p>
+</br></div><div class="article-licensing box"><div class="licensing-title"><p>ARM Mac에서 발생한 다양한 MySQL 에러 해결</p><p><a href="https://blog.edward.moe/2023/11/14/mysql-errors-on-apple-silicon/">https://blog.edward.moe/2023/11/14/mysql-errors-on-apple-silicon/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Edward*</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2023. 11. 14.</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2023. 11. 14.</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/MySQL/">MySQL</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/03/01/eclipse-ide-on-apple-silicon/"><span class="level-item">ARM Mac에서 이클립스 IDE를 실행하는 방법 (JDK 오류)</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><a href="https://edward.moe" target="_blank"><img class="avatar is-rounded" src="/img/avatar.png" alt="Edward*"></a></figure><a href="https://edward.moe" target="_blank"><p class="title is-size-4 is-block" style="line-height:inherit;">Edward*</p></a><p class="is-size-6 is-block">AI undergrad.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Ansan, South Korea</span></p></div></div></nav></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%EA%B2%8C%EC%9E%84%EB%A9%94%EC%9D%B4%EC%BB%A4/"><span class="level-start"><span class="level-item">게임메이커</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EA%B2%8C%EC%9E%84%EB%A9%94%EC%9D%B4%EC%BB%A4/%EA%B3%BC%EA%B1%B0%EC%9E%91/"><span class="level-start"><span class="level-item">과거작</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%EA%B8%B0%ED%83%80/"><span class="level-start"><span class="level-item">기타</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/"><span class="level-start"><span class="level-item">데이터베이스</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"><span class="level-start"><span class="level-item">알고리즘</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/BOJ/"><span class="level-start"><span class="level-item">BOJ</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%EC%9B%B9/"><span class="level-start"><span class="level-item">웹</span></span><span class="level-end"><span class="level-item tag">6</span></span></a><ul><li><a class="level is-mobile" href="/categories/%EC%9B%B9/CV/"><span class="level-start"><span class="level-item">CV</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%EC%9B%B9/%EB%B8%94%EB%A1%9C%EA%B7%B8/"><span class="level-start"><span class="level-item">블로그</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Eclipse/"><span class="tag">Eclipse</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GameMaker%E2%84%A2/"><span class="tag">GameMaker™</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Hexo/"><span class="tag">Hexo</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/MySQL/"><span class="tag">MySQL</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TensorFlow/"><span class="tag">TensorFlow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/html-css/"><span class="tag">html, css</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="Edward*" height="28"></a><p class="is-size-7"><span>&copy; 2009 -  2023 Edward*</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
